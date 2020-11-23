@@ -1,4 +1,4 @@
-const width = 800;
+const width = 1000;
 const height = 600;
 
 
@@ -7,9 +7,9 @@ let movers = []
 
 
 function setup() {
-	const canvas = createCanvas(width, height);
+  const canvas = createCanvas(width, height);
   canvas.position((windowWidth - width) / 2, (windowHeight - height) / 2)
-	background(240);
+  background(240);
 
   attractor = new Attractor(width / 2, height / 2)
   attractor.set_mass(4)
